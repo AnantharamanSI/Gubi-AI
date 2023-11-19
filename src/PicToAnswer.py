@@ -1,15 +1,9 @@
 import openai
 import requests
 import json
-# import xmltodict
-# import urllib
 import wolframalpha
 import os
-# from sympy.parsing.latex import parse_latex
 
-
-#def translateToLatex(text):
-#    if ("text" in )
 
 BAD_INPUT_MESSAGE = "Incompatible input/input cannot be read"
 

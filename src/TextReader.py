@@ -45,7 +45,3 @@ def talk(text):
     res.stream_to_file("test.mp3")
     print("playing...")
     autoplay_audio("test.mp3")
-    #streamlit.audio("test.mp3")
-    # os.system("start test.mp3")
-    # time.sleep(2)
-    # os.system("close test.mp3")

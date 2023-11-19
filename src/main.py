@@ -11,5 +11,3 @@ def main():
 #------------ Driver Code --------------
 load_dotenv("../.env")
 main()
-# cgpt = "a^2 + b^2 = c^2"
-# TextReader.talk(cgpt)

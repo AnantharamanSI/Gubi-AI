@@ -14,14 +14,14 @@ class AITutorWebsite:
 
         streamlit.write('Please note that sometimes ChatGPT may time out. If 20 seconds passes without an update, please click "New Question"')
 
-        self.camera = cv2.VideoCapture(0)
+        self.camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
         resetButton = streamlit.button("New Question", 
             on_click=self.resetQuestion,
             disabled=False,
         )
 
-        self.AIClient = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+        self.AIClient = openai.OpenAI(api_key=str(os.environ.get("OPENAI_API_KEY")))
         self.mainLoop()
 
 
